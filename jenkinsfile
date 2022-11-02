@@ -5,7 +5,7 @@ pipeline {
 	string(name: 'MAVEN_GOAL', defaultValue: 'mvn package', description: '') }
 
     triggers { 
-        pollSCM('* * * * *') }
+        pollSCM('H/05 * * * *') }
 
     stages {
         stage('scm') {
